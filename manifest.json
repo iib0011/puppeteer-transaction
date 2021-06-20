@@ -1,0 +1,25 @@
+{
+  "name": "Olympbot",
+  "description": "Trade!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting","tabs","http://*/*", "https://*/*","https://olymptrade.com/*",    "<all_urls>"
+
+
+  ],
+  "host_permissions": [
+    "http://*/*", "https://*/*","https://olymptrade.com/*"],
+  "action": {
+    "default_popup": "popup.html"},
+  "content_scripts": [
+    {
+      "matches": ["https://olymptrade.com/cabinet"],
+      "js": ["transScript.js"]
+    }
+  ],
+  "options_page": "options.html"
+}
+
