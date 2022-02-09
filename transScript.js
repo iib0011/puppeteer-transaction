@@ -1,5 +1,4 @@
 function calculate(daysToEvaluate) {
-    console.log("Started");
     setTimeout(() => {
         const existCondition1 = setInterval(async function () {
             const dropDown = document.querySelector("#tab-user-deals-history > div.cb-filter.cb-filter_with-tabs > div.cb-filter__item.cb-filter__item_size-small-l.cb-filter__item_size-large-m.deal-history-account-filter > div:nth-child(2) > div > div.input-container.drop-down-plain-value > span");
